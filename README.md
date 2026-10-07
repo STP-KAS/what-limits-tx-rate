@@ -92,6 +92,18 @@ Michael Sutton leads protocol. Ori Newman shipped rusty-kaspa v2.1.0 and SilverS
 
 Parker Schmidt's 100-blocks-a-second material explains a rate that is not live. Luke Dunshea, Alexander Safstrom, and Sivan Helfer work on SilverScript and KCC. The master file does not call them core. Kaspa Unchained and Kaspa Global are community. supertypo maintains the DOTK indexer and has no X handle on the board. None of these roles is a switch that raises the rate of a full block.
 
+## Limited hardware, and the public nodes
+
+A Testnet-10 node is the same rusty-kaspa tree as main. There is no second consensus github for TN10. `main` is still v2.1.0, commit `01b532e8` (22 Sep 2026). The flag is `--testnet --netsuffix=10`. Ori Newman's merged pulls on that tag cover version bump `#1139`, arithmetic safety `#1138`, rejecting a coinbase in the mempool `#1137`, and IBD header chunks `#1136`. Maxim Biryukov's merged Toccata cleanup `#1082` through `#1089` is the mass and fee shape that is live: one block mass limit, a relay fee floor, script units. It does not add blocks per second. Hans Moog's merged `#958` fixes a protobuf default so a zero mass field is not rejected. Romain Billot's open DAGKnight issues `#1106` through `#1118` are the proposed network. Michael Sutton has said extremely high block rates and DAGKnight stay apart. coderofstuff's open mempool-notification issue `#339` tells a wallet when a transaction enters or leaves a pool. It does not make the pool larger.
+
+On 7 Oct 2026, about 11:10Z, this desk tried 88 public Testnet-10 wRPC names. Every name that answered was kaspad 2.1.0, synced, with a UTXO index. Those answers were three machines. Several names, and some different addresses, showed one mempool. No fourth public node answered. Adding a hostname did not add a node.
+
+The desk already runs one synced node. Its data is about 105 GB. The process was near 5 GB of RAM. Disk had room for another copy. A second node on this same PC would still relay into those same three public mempools. It would not add block mass, and it would not give a public node a larger pool. The panic line remains on a public node that was started with `--ram-scale=0.1`.
+
+What this hardware can do is narrower. Keep one synced node on the default mempool scale. Submit only while the three public pools stay flat. Stop when they climb, before 100,000. Count machines. A list of names is not a list of mempools. A full block is still about 3,000 ordinary payments a second, and this desk does not raise that by opening more sockets.
+
+Issue `#1134` on rusty-kaspa records IBD stalls and an RPC route that fills up, from a TN10 setup with many CPU miners. Those are ways a node falls behind. They are not a wider block. Issue `#1102` says the 100-blocks-a-second lore is not a KIP-2 activation. The master file already says the same thing. This reading agrees.
+
 ## What can be used later
 
 A node patch returns mempool-full instead of asserting, and a public node under congestion stays off `--ram-scale=0.1`. A sender stops itself while public mempools are climbing toward 100,000. Neither change creates block mass.
