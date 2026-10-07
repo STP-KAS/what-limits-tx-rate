@@ -116,6 +116,8 @@ The master file's live row is still about 10 blocks a second, Toccata after DAA 
 
 A reading at 13:57Z, after the public names had been checked and the block had gone quiet, put 2,800 coins at fee 200 and 300 through the desk node. For the next minute the virtual chain listed about 1,539 of them a second, with no rejects, and the public pools stayed near 23,000 to 26,000. The block then filled again, about 305 transactions and about 497,000 of 500,000 compute mass. A second pair at 1,018 and 1,527, 1,644 coins, took slots from the first pair. Combined seen-accepted fell to about 1,403. The priority quote then read 2,447, above that second fee. The pools sat near 36,000 to 38,000. The signers were stopped at 14:00:28Z. That is not a pass of 2,207, and it is not a pass of 6,321 included transactions.
 
+At 14:09Z the priority quote had fallen to about 720 and the public pools were back near 18,000 to 22,000. One pair at fee 1,600 and 2,400, 2,800 coins, saw about 1,920 a second for about 70 seconds, with no rejects. The block was full again, about 307 transactions and about 497,700 of 500,000 compute mass. The priority quote then read 4,554, above that fee. The public pools were climbing through about 60,000. The pair was stopped at 14:11:26Z. Still under 2,207.
+
 ## What can be used later
 
 A node patch returns mempool-full instead of asserting, and a public node under congestion stays off `--ram-scale=0.1`. A sender stops itself while public mempools are climbing toward 100,000. Neither change creates block mass.
