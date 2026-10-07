@@ -1,8 +1,8 @@
-> **Experimental. Not advice.**
+> **Experimental. We are just trying this.**
 >
-> A general note. Not the storm plan, not a test log, and not a node release. A later test can use it. This repository does not change that plan.
+> Good intentions, shaky hands. STP does not know what he is doing. We test, we write down what we think we saw, and that is the whole product. A number here is not the truth. A chart is not the truth. Any other sentence that sounds sure of itself is not the truth either. Do not count any of it as a claim.
 >
-> [DISCLAIMER.md](DISCLAIMER.md)
+> [Disclaimer](DISCLAIMER.md)
 
 # What limits the transaction rate
 
