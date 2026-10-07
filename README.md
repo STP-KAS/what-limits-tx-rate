@@ -104,6 +104,18 @@ What this hardware can do is narrower. Keep one synced node on the default mempo
 
 Issue `#1134` on rusty-kaspa records IBD stalls and an RPC route that fills up, from a TN10 setup with many CPU miners. Those are ways a node falls behind. They are not a wider block. Issue `#1102` says the 100-blocks-a-second lore is not a KIP-2 activation. The master file already says the same thing. This reading agrees.
 
+## The desk numbers, read against the master file
+
+The desk record is [tn10-build-desk-tps](https://github.com/STP-KAS/tn10-build-desk-tps). Three figures sit next to each other, and they are not the same measurement.
+
+6,321 tx/s is submit-OK for 20 seconds, six processes, fee 100 and 150, zero rejects. The seen-accepted count in that window is 38,822, about 1,900 a second, not 6,321 included. The 9,100 figure is 12 seconds with 28,617 orphans beside it. The long figure is 2,210 submit and 2,207 seen accepted, from 2026-10-06T23:53:27Z to 2026-10-07T05:54:53Z, fee 200 and 300. That is the number a later hold has to pass.
+
+The master file's live row is still about 10 blocks a second, Toccata after DAA 474165565, KIP-16, 17, 20 and 21 Active, and rusty-kaspa v2.1.0 at `01b532e8`. That tag is not a consensus upgrade. GHOSTDAG is the live rule. The paper is Sompolinsky, Wyborski, and Zohar. Shai Wyborski left core in 2025 and is not a current pin. DAGKnight is Proposed. About 100 blocks a second is not live. Luke Dunshea, Alexander Safstrom, and Sivan Helfer are SilverScript and KCC on the board, not core.
+
+`main` of rusty-kaspa has not moved past that tag. Ori Newman's merged `#1136`, `#1137`, `#1138`, and `#1139` are IBD chunks, a coinbase rejected from the mempool, arithmetic and relay checks, and the version bump. Maxim Biryukov's merged `#1082` through `#1089` is the Toccata mass cleanup. Hans Moog's `#958` lets a zero mass field through protobuf. Romain Billot's open `#1106` through `#1118` are DAGKnight work items. coderofstuff's `#339` is a mempool notification. None of those adds grams to a block or adds blocks per second. FreshAir08's fee work, on the board, decides who fills the grams that exist.
+
+A reading at 13:57Z, after the public names had been checked and the block had gone quiet, put 2,800 coins at fee 200 and 300 through the desk node. For the next minute the virtual chain listed about 1,539 of them a second, with no rejects, and the public pools stayed near 23,000 to 26,000. The block then filled again, about 305 transactions and about 497,000 of 500,000 compute mass. A second pair at 1,018 and 1,527, 1,644 coins, took slots from the first pair. Combined seen-accepted fell to about 1,403. The priority quote then read 2,447, above that second fee. The pools sat near 36,000 to 38,000. The signers were stopped at 14:00:28Z. That is not a pass of 2,207, and it is not a pass of 6,321 included transactions.
+
 ## What can be used later
 
 A node patch returns mempool-full instead of asserting, and a public node under congestion stays off `--ram-scale=0.1`. A sender stops itself while public mempools are climbing toward 100,000. Neither change creates block mass.
