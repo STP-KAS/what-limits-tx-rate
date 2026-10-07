@@ -6,6 +6,15 @@
 
 # What limits the transaction rate
 
+This page is the mass ceiling. It is not a run log. The other notes stay separate, and each one keeps its own disclaimer.
+
+| Note | What it is |
+|---|---|
+| [GROK-BUILD-PROMPT.md](https://github.com/STP-KAS/tn10-storm-throughput-questions/blob/main/plan/GROK-BUILD-PROMPT.md) | Paste-in for Grok Build on 9 or 13 Oct. Ready. It does not start the storm. |
+| [tn10-storm-throughput-questions](https://github.com/STP-KAS/tn10-storm-throughput-questions) | The questions, the method, and the empty result sections. Runs listed oldest first. |
+| [tn10-build-desk-tps](https://github.com/STP-KAS/tn10-build-desk-tps) | Desk runs, oldest first. The six-hour 2,207 is there. |
+| [tn10-build-desk-tps-3500](https://github.com/STP-KAS/tn10-build-desk-tps-3500) | 7 Oct included-rate tries, oldest first. 3,500 was not read. |
+
 ## Why
 
 Live Kaspa aims at about 10 blocks a second. That rate is Crescendo. It is the rate the difficulty adjustment holds. rusty-kaspa v2.1.0 is the node pin. That release is not a consensus upgrade.
