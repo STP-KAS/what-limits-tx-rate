@@ -94,6 +94,8 @@ Parker Schmidt's 100-blocks-a-second material explains a rate that is not live. 
 
 ## What can be used later
 
-A node patch returns mempool-full instead of asserting, and a public node under congestion stays off `--ram-scale=0.1`. A sender stops itself while public mempools are climbing toward 100,000. Neither change creates block mass. The open question is whether enough ordinary payments, priced above the rest of a full block, can take the mass that is already there without crossing that line.
+A node patch returns mempool-full instead of asserting, and a public node under congestion stays off `--ram-scale=0.1`. A sender stops itself while public mempools are climbing toward 100,000. Neither change creates block mass.
+
+A later reading the same morning put about 4,870 ordinary payments, at a fee above the quoted priority rate, through one desk node. For about 43 seconds the virtual chain listed about 2,222 of that sender's transactions per second, with no rejects in that window. That is higher than the earlier reading near 1,700, and still under the mass ceiling near 3,040. Public mempools climbed from the mid-40,000s through about 77,000. The extra senders were stopped. About half a minute later the same public pools were back in the mid-40,000s, and the three nodes still answered as synced. The stop kept them up. It did not hold the higher rate, and it did not fill the block.
 
 Intentions are good; thought process is questionable. STP remains delusional. Si vis pacem, para bellum.
