@@ -10,10 +10,10 @@ This page is the mass ceiling. It is not a run log. The other notes stay separat
 
 | Note | What it is |
 |---|---|
-| [GROK-BUILD-PROMPT.md](https://github.com/STP-KAS/tn10-storm-throughput-questions/blob/main/plan/GROK-BUILD-PROMPT.md) | Paste-in for Grok Build on 9 or 13 Oct. Ready. It does not start the storm. |
-| [tn10-storm-throughput-questions](https://github.com/STP-KAS/tn10-storm-throughput-questions) | The questions, the method, and the empty result sections. Runs listed oldest first. |
-| [tn10-build-desk-tps](https://github.com/STP-KAS/tn10-build-desk-tps) | Desk runs, oldest first. The six-hour 2,207 is there. |
-| [tn10-build-desk-tps-3500](https://github.com/STP-KAS/tn10-build-desk-tps-3500) | 7 Oct included-rate tries, oldest first. 3,500 was not read. |
+| [GROK-BUILD-PROMPT.md](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions/blob/main/plan/GROK-BUILD-PROMPT.md) | Paste-in for Grok Build on 9 or 13 Oct. Ready. It does not start the storm. |
+| [tn10-storm-2026-10-04-questions](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions) | The questions, the method, and the empty result sections. Runs listed oldest first. |
+| [tn10-storm-2026-10-06](https://github.com/STP-KAS/tn10-storm-2026-10-06) | Desk runs, oldest first. The six-hour 2,207 is there. |
+| [tn10-storm-2026-10-07](https://github.com/STP-KAS/tn10-storm-2026-10-07) | 7 Oct included-rate tries, oldest first. 3,500 was not read. |
 
 ## Why
 
@@ -115,7 +115,7 @@ Issue `#1134` on rusty-kaspa records IBD stalls and an RPC route that fills up, 
 
 ## The desk numbers, read against the master file
 
-The desk record is [tn10-build-desk-tps](https://github.com/STP-KAS/tn10-build-desk-tps). Three figures sit next to each other, and they are not the same measurement.
+The desk record is [tn10-storm-2026-10-06](https://github.com/STP-KAS/tn10-storm-2026-10-06). Three figures sit next to each other, and they are not the same measurement.
 
 6,321 tx/s is submit-OK for 20 seconds, six processes, fee 100 and 150, zero rejects. The seen-accepted count in that window is 38,822, about 1,900 a second, not 6,321 included. The 9,100 figure is 12 seconds with 28,617 orphans beside it. The long figure is 2,210 submit and 2,207 seen accepted, from 2026-10-06T23:53:27Z to 2026-10-07T05:54:53Z, fee 200 and 300. That is the number a later hold has to pass.
 
