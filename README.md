@@ -1,6 +1,6 @@
 > **Experimental. We are just trying this.**
 >
-> Good intentions, shaky hands. STP does not know what he is doing. We test, we write down what we think we saw, and that is the whole product. A number here is not the truth. A chart is not the truth. Any other sentence that sounds sure of itself is not the truth either. Do not count any of it as a claim.
+> We test, we write down what we think we saw, and that is the whole product. A number here is not the truth. A chart is not the truth. Any other sentence that sounds sure of itself is not the truth either. Do not count any of it as a claim.
 >
 > [Disclaimer](DISCLAIMER.md)
 
@@ -133,4 +133,4 @@ A node patch returns mempool-full instead of asserting, and a public node under 
 
 A later reading the same morning put about 4,870 ordinary payments, at a fee above the quoted priority rate, through one desk node. For about 43 seconds the virtual chain listed about 2,222 of that sender's transactions per second, with no rejects in that window. That is higher than the earlier reading near 1,700, and still under the mass ceiling near 3,040. Public mempools climbed from the mid-40,000s through about 77,000. The extra senders were stopped. About half a minute later the same public pools were back in the mid-40,000s, and the three nodes still answered as synced. The stop kept them up. It did not hold the higher rate, and it did not fill the block.
 
-Intentions are good; thought process is questionable. STP remains delusional. Si vis pacem, para bellum.
+Si vis pacem, para bellum.
